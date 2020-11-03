@@ -7,9 +7,10 @@
 - Zack: Assemblage des pièces
 - David: Trucs et astuces / Résultats finaux
 
-**TO DO**
+**TO DO**:
 - Assignez section Équipe
 - JS
 - BONUS
 
-**KNOWN BUGS**
+**KNOWN BUGS**:
+-
