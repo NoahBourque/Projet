@@ -9,5 +9,7 @@
 
 **TO DO**
 - Assignez section Équipe
+- JS
+- BONUS
 
-**BUGS**
+**KNOWN BUGS**
