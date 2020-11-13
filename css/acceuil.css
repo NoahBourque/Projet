@@ -22,41 +22,57 @@ h1 {
   height: 27px;
   padding: 10px;
 }
-ul {
+.ulmenu {
  font-weight: bold;
   list-style-type: none;
   margin: 0;
   padding: 0;
-  background-color:red;
+  background-color:#ff1a1a;
   overflow: none;
 }
-li {
-  display: inline;
+
+.limenu {
   float: right;
-  border-right: 1px solid #bbb;
-}
-li a {
   display: block;
   color:black;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  display: block;
+  border-right: 1px solid #bbb;
   background-color: #ff1a1a;
 }
+
 li a:hover {
   background-color:lightgrey;
 }
-.active {
+#active {
   background-color: grey;
 }
-
 .imagescontenu {
   float: right;
 }
-
-
 * {
- box-sizing: border-box;
+  box-sizing: border-box;
+ }
+aside{
+  font-size: 18px;
+}
+.ulmenu2{
+  font-weight: bold;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color:#ff1a1a;
+  overflow: none;
 }
 
+.limenu2{
+  float: right;
+  display: block;
+  color:black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  border-right: 1px solid #bbb;
+  background-color: grey;
+}
