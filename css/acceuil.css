@@ -3,7 +3,6 @@ body {
   background-color:white;
 }
 #top{
- /*background-image: linear-gradient(grey, lightgrey);*/
  background-color: #ff1a1a;
  font-size: large;
  position: sticky;
@@ -31,7 +30,7 @@ h1 {
   overflow: none;
 }
 
-.limenu {
+.ulmenu li a {
   float: right;
   display: block;
   color:black;
@@ -66,7 +65,7 @@ aside{
   overflow: none;
 }
 
-.limenu2{
+.ulmenu2 li a{
   float: right;
   display: block;
   color:black;
