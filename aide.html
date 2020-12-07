@@ -24,6 +24,90 @@
                 <img src="images/logopc.png" alt="Logo" id="logo">
                 <h1 id="titrepage">Aide</h1>
                 <hr>
+                 <div id="Lame">
+            <form method="POST" action="./validation.html" enctype="">
+                
+                <fieldset id="mère">
+                    <legend><strong>Contactez-nous</strong></legend>
+                    <fieldset> <!--Insérer une zone (encadrer) --> 
+                            <legend>Vos coordonnées</legend> <!-- titre de la zone--> 
+                        <div id="pn">
+                            <p class="pn">
+                                <label onclick="clicSurPrénom();" for="prenom">Prénom *:</label>
+                                <input type="text" id="prenom" name="nom" title="Les noms composés sont acceptés." onblur="checkprenom();" required/>  <!--Insérer ex:un prémom--> 
+                            </p>
+                            <p class="pn">
+                                <label for="nom">Nom * :</label>
+                                <input type="text" name="php_name" id="nom" onblur="checkinput();" required/> <!-- L'option "required" rend le champ obligatoire. On ne pourra pas soumettre le formulaire tant que les champs marqués de l'option "required" ne sont pas tous remplis. -->
+                            </p>
+                        </div>
+                        <div id="ce">
+                             <p>
+                                <label for="courriel">Courriel *:</label>
+                                <input type="email" name="courriel" id="courriel"pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Ex: email@bidon.com" onblur="checkinput(this);" required/> <!--Insérer courriel-->
+                                
+                            </p>
+                            
+                                <label for="telephone"> Numéro de téléphone *:</label>
+                                <input type="tel" name="tel" id="telephone" pattern="\d{3}[\-]\d{3}[\-]\d{4}" placeholder="Ex:(819)-999-9999" onblur="checkinput(this);"required />  <!--Insérer un numéro de téléphone-->
+                            </p>
+                        </div>
+                        <p>
+                            <label for="photo">Photo de profil :</label>
+                            <input type="file" name="php_file" id="photo" onchange="checkFileSize();"/>
+                        </p>
+                        <p>
+                                <label for="langue">Langue de la réponse :</label><br/>
+                                <select name="php_lang" id="langue"> <!-- La balise <select> permet de créer un menu déroulant comprenant une ou plusieurs option(s). -->
+                                    <option value="Al">Allemand</option>
+                                    <option value="An">Anglais</option>
+                                    <option value="Es">Espagnol</option>
+                                    <option value="Fr" selected>Français</option> <!-- L'attribut "selected" permet de choisir le français comme langue par défaut. -->
+                                    <option value="Ja">Japonais</option>
+                                    <option value="Ma">Mandarin</option>
+                                    <option value="Po">Portuguais</option>
+                                </select>
+                        </p>
+                            
+                        </fieldset>       
+                        <br/>
+                    <label for="question"><strong> Inscrivez votre question :</strong></label>
+                        <p>
+                            <textarea name="php_comment" id="question" cols="100" rows="4" maxlength="500"></textarea> 
+                        </p>   
+                        <p>
+                            <strong>Quel sont vos haptitudes :</strong>
+                            <div id="choix">
+                                <input type="checkbox" id="aucun" name="subscribe" value="newsletter">
+                                <label for="aucun">Jamais touché à l'informatique</label>
+                                <br/>
+                                <input type="checkbox" id="base" name="subscribe" value="newsletter">
+                                <label for="base">Connais les bases</label>
+                                <br/>
+                                <input type="checkbox" id="assemblage" name="subscribe" value="newsletter">
+                                <label for="assemblage">Cappable d'assemblé un ordinateur</label>
+                                <br/>
+                                <input type="checkbox" id="expert" name="subscribe" value="newsletter">
+                                <label for="expert">Informaticien maison</label>
+                            
+                            </div>
+                        </p>
+                        <p><strong>Abonnement à l'infolettre :</strong><br/>
+                                <input type="radio" name="php_subscribe" id="acceptation" checked/><label for="acceptation">Oui, je souhaite recevoir des publications.</label><br/> <!-- L'attribut "checked" nous assure qu'une optione est sélectionnée par défaut (si l'utilisateur oublie d'en sélectionner une lui-même). -->
+                                <input type="radio" name="php_subscribe" id="refus"/><label for="refus">Non, je ne veux pas recevoir de publications.</label>
+                        </p>
+                            
+                        <p>
+                                <button type="submit" onclick="myFunction()">Envoyer le formulaire</button> <!--insérer une bouton "envoyer"--> 
+                                <input type="reset" value="Effacer le formulaire"/>
+                        </p>
+                    </fieldset>
+                </form>  
+              
+              <section id="carte"> 
+                    <iframe  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11203.641154590652!2d-71.8862553!3d45.4111486!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xda8ac1fd50f10a03!2sC%C3%A9gep%20de%20Sherbrooke%20-%20pavillon%205!5e0!3m2!1sfr!2sca!4v1606766264699!5m2!1sfr!2sca" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </section>
+            </div>       
             </header>
         </section>
         <section class="contenu">
